@@ -1,0 +1,5 @@
+/*
+ *  Document   : base_pages_login.js
+ *  Author     : TBDigital
+ */
+var BasePagesLogin=function(){var e=function(){jQuery(".js-validation-login").validate({errorClass:"help-block text-right animated fadeInDown",errorElement:"div",errorPlacement:function(e,r){jQuery(r).parents(".form-group > div").append(e)},highlight:function(e){jQuery(e).closest(".form-group").removeClass("has-error").addClass("has-error"),jQuery(e).closest(".help-block").remove()},success:function(e){jQuery(e).closest(".form-group").removeClass("has-error"),jQuery(e).closest(".help-block").remove()},rules:{"username":{required:!0,minlength:3},"password":{required:!0,minlength:4}},messages:{"username":{required:"Please enter a username",minlength:"Your username must consist of at least 3 characters"},"password":{required:"Please provide a password",minlength:"Your password must be at least 4 characters long"}}})};return{init:function(){e()}}}();jQuery(function(){BasePagesLogin.init()});
