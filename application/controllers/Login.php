@@ -8,6 +8,7 @@ class Login extends CI_Controller {
 	
 	public function index() {
 		if(!empty($this->session->userdata('bas_id'))){
+			// redirect when logged in
 			redirect(base_url('dashboard'), 'refresh');	
 		} 
 		
